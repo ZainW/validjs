@@ -4,6 +4,7 @@ specifiers:
   '@egoist/prettier-config': 1.0.0
   '@typescript-eslint/eslint-plugin': ^5.12.1
   '@typescript-eslint/parser': ^5.12.1
+  '@vitest/ui': ^0.5.7
   eslint: ^8.10.0
   prettier: 2.5.1
   tsup: 5.11.13
@@ -14,11 +15,12 @@ devDependencies:
   '@egoist/prettier-config': 1.0.0
   '@typescript-eslint/eslint-plugin': 5.12.1_27a0c788acac7d65514027b167e3b3f6
   '@typescript-eslint/parser': 5.12.1_eslint@8.10.0+typescript@4.5.5
+  '@vitest/ui': 0.5.7
   eslint: 8.10.0
   prettier: 2.5.1
   tsup: 5.11.13_typescript@4.5.5
   typescript: 4.5.5
-  vitest: 0.5.7
+  vitest: 0.5.7_@vitest+ui@0.5.7
 
 packages:
 
@@ -95,6 +97,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.4
       fastq: 1.11.0
+    dev: true
+
+  /@polka/url/1.0.0-next.21:
+    resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
   /@types/chai-subset/1.3.3:
@@ -239,6 +245,12 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.12.1
       eslint-visitor-keys: 3.3.0
+    dev: true
+
+  /@vitest/ui/0.5.7:
+    resolution: {integrity: sha512-QHGUNHbfcARZdz8bI+8f3VxMLWr9PUzZYAeH4ZXREt7qK7PmnftzJkifUMiPod28TDbwguZx1dC5FbCac89VUA==}
+    dependencies:
+      sirv: 2.0.2
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.7.0:
@@ -1317,6 +1329,11 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
+  /mrmime/1.0.0:
+    resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
+    engines: {node: '>=10'}
+    dev: true
+
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
@@ -1558,6 +1575,15 @@ packages:
     resolution: {integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==}
     dev: true
 
+  /sirv/2.0.2:
+    resolution: {integrity: sha512-4Qog6aE29nIjAOKe/wowFTxOdmbEZKb+3tsLljaBRzJwtqto0BChD2zzH0LhgCSXiI+V7X+Y45v14wBZQ1TK3w==}
+    engines: {node: '>= 10'}
+    dependencies:
+      '@polka/url': 1.0.0-next.21
+      mrmime: 1.0.0
+      totalist: 3.0.0
+    dev: true
+
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
@@ -1649,6 +1675,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /totalist/3.0.0:
+    resolution: {integrity: sha512-eM+pCBxXO/njtF7vdFsHuqb+ElbxqtI4r5EAvk6grfAFyJ6IvWlSkfZ5T9ozC6xWw3Fj1fGoSmrl0gUs46JVIw==}
+    engines: {node: '>=6'}
     dev: true
 
   /tree-kill/1.2.2:
@@ -1759,7 +1790,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.5.7:
+  /vitest/0.5.7_@vitest+ui@0.5.7:
     resolution: {integrity: sha512-keLLxLGi+dkXFUuKxCXnBw5MkSZ03cynlG6+LVLaKoyUuW8Xu6NzX1oC6dVNm6Ig7mw6gX9OHV+Lpmcc3tu/mQ==}
     engines: {node: '>=14.14.0'}
     hasBin: true
@@ -1780,6 +1811,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.0
       '@types/chai-subset': 1.3.3
+      '@vitest/ui': 0.5.7
       chai: 4.3.6
       local-pkg: 0.4.1
       tinypool: 0.1.2

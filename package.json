@@ -1,6 +1,6 @@
 {
   "name": "validjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "My awesome typescript validation library",
   "publishConfig": {
     "access": "public"
@@ -19,6 +19,8 @@
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "pnpm run build-fast -- --dts-resolve",
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:ci": "vitest run",
     "prepublishOnly": "pnpm run build",
     "lint": "eslint --fix --ignore-path .eslintignore --ext .js,.ts ."
   },
@@ -27,6 +29,7 @@
     "@egoist/prettier-config": "1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
+    "@vitest/ui": "^0.5.7",
     "eslint": "^8.10.0",
     "prettier": "2.5.1",
     "tsup": "5.11.13",
