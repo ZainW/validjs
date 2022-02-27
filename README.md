@@ -1,4 +1,4 @@
-**💛 You can help the author become a full-time open-source maintainer by [sponsoring him on GitHub](https://github.com/sponsors/egoist).**
+<!-- **💛 You can help the author become a full-time open-source maintainer by [sponsoring him on GitHub](https://github.com/sponsors/egoist).**
 
 ---
 
@@ -28,8 +28,8 @@ npm i my-ts-lib
 
 ## Sponsors
 
-[![sponsors](https://sponsors-images.egoist.sh/sponsors.svg)](https://github.com/sponsors/egoist)
+[![sponsors](https://sponsors-images.egoist.sh/sponsors.svg)](https://github.com/sponsors/egoist) -->
 
 ## License
 
-MIT &copy; [EGOIST](https://github.com/sponsors/egoist)
+MIT &copy; [ZainW](https://github.com/ZainW)
