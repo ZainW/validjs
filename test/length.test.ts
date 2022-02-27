@@ -1,5 +1,5 @@
 import { test, assert, describe } from 'vitest';
-import { min, max } from '../src';
+import { min, max, between } from '../src';
 
 describe('String min', () => {
   test('empty string', () => {
@@ -50,4 +50,21 @@ describe('Number max', () => {
   test('positive number', () => {
     assert.equal(max(1, 0), false);
   });
+});
+
+
+describe('String between', () => {
+
+  test('empty string', () => {
+    assert.equal(between('', 1, 5), false);
+  });
+  test('empty string with spaces', () => {
+    assert.equal(between(' ', 0, 1), true);
+  });
+
+  test('existing string', () => {
+    assert.equal(between('This is a sentence', 0, 10), false);
+    assert.equal(between('This is a sentence', 0, 20), true);
+  });
+
 });

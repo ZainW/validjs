@@ -1,5 +1,5 @@
 import { required } from './required';
-import { min, max } from './length';
+import { min, max, between } from './length';
 import { email } from './email';
 
-export { required, min, max, email };
+export { required, min, max, email, between };
