@@ -1,4 +1,5 @@
-import { required } from "./required";
-import { min, max } from "./length";
+import { required } from './required';
+import { min, max } from './length';
+import { email } from './email';
 
-export {required, min, max};
+export { required, min, max, email };

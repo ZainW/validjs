@@ -1,7 +1,7 @@
-export function required (value: any): boolean {
+export function required (value: string|boolean|number): boolean {
 
-  if (typeof value === "string") {
-    return value.trim().length > 0
+  if (typeof value === 'string') {
+    return value.trim().length > 0;
   }
-  return value !== undefined && value !== null
+  return value !== undefined && value !== null;
 }
